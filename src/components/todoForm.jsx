@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 
-const TodoForm = () => {
+const TodoForm = ({addTodo}) => {
   const [value, setValue] = useState("");
    
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
+    addTodo(value);
 
     setValue('');
   }
@@ -16,7 +17,8 @@ const TodoForm = () => {
         placeholder="what is the task about?"
         onChange={(e) => setValue(e.target.value)}
       />
-      <button type="submit">Add Task</button>
+
+      <input type="button" value="Add Task" />
     </form>
   );
 };
