@@ -16,9 +16,9 @@ const TodoWrapper = () => {
     console.log(todos);
   };
 
-  const toggleComplete = id => {
+  const toggleComplete = (id) => {
     setTodos(
-      todos.map(todo =>
+      todos.map((todo) =>
         todo.id == id ? { ...todo, complited: !todo.complited } : todo
       )
     );

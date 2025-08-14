@@ -15,10 +15,10 @@ const TodoForm = ({addTodo}) => {
         type=" text"
         value={value}
         placeholder="what is the task about?"
+        required
         onChange={(e) => setValue(e.target.value)}
       />
-
-      <input type="button" value="Add Task" />
+      <button type="submit">Add Task</button>
     </form>
   );
 };

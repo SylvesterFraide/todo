@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css'
-import TodoWrapper from './components/TodoWrapper';
+import TodoWrapper from '../src/components/TodoWrapper';
+
 function App() {
   return (
     <>
