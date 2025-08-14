@@ -26,7 +26,7 @@ function TodoForm(props) {
           required
           onChange={(e) => setInput(e.target.value)}
         />
-        <button type="submit" className="todo-form">
+        <button className="todo-form">
           Add Todo
         </button>
       </form>
