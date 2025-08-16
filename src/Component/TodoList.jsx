@@ -17,10 +17,6 @@ export const TodoList = () => {
     );
   };
 
-  //   const removeTodo = (id) => {
-  //   setTodos(todos.filter((todo) => todo.id !== id));
-  // };
-
   const removeTodo = (id) => {
     const updatedTodos = [...todos].filter((todo) => todo.id !== id);
     setTodos(updatedTodos);
@@ -37,15 +33,17 @@ export const TodoList = () => {
   };
 
   return (
-    <div>
-      <h1 className="todoList-header">What's the plan for today?</h1>
-      <TodoForm onSubmit={addTodo} />
-      <Todo
-        todos={todos}
-        completeTodo={completeTodo}
-        removeTodo={removeTodo}
-        updateTodo={updateTodo}
-      />
+    <div className="todo-list-container">
+      <div className="todo-wrapper">
+        <h1 className="todoList-header">What's the plan for today?</h1>
+        <TodoForm onSubmit={addTodo} />
+        <Todo
+          todos={todos}
+          completeTodo={completeTodo}
+          removeTodo={removeTodo}
+          updateTodo={updateTodo}
+        />
+      </div>
     </div>
   );
 };

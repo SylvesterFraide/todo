@@ -1,4 +1,58 @@
-.todo{
-    cursor: pointer;
-    font-size: 1.2rem;
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+  background-color: #bde0fe;
+}
+
+.todo-wrapper {
+  background-color: #669bbc;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.todoList-header {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.todo-input {
+  outline: none;
+  border: 2px solid blue;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 70%;
+  cursor: pointer;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+}
+
+.todo-input-edit {
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 70%;
+  cursor: pointer;
+
+}
+
+.todo-input-edit:hover{
+    background-color: #bde0fe;
+    color: #0e6da8;
+}
+
+.todo-form-addTodo{
+  background-color: blue;
+  border: 2px solid blue;
+  border-radius: 5px;
+  margin-left: 6px;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-bottom: 8px;
 }

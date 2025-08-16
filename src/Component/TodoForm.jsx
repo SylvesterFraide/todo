@@ -21,11 +21,12 @@ function TodoForm(props) {
           <input
             type="text"
             name="text"
+            className="todo-input-edit"
             value={input}
             placeholder="Update your item"
             onChange={(e) => setInput(e.target.value)}
           />
-          <button className="todo-form">Update</button>{" "}
+          <button className="todo-form-updateTodo">Update</button>{" "}
         </>
       ) : (
         <>
@@ -33,12 +34,13 @@ function TodoForm(props) {
           <input
             type="text"
             name="text"
+            className="todo-input"
             value={input}
             placeholder="Add a new todo"
             required
             onChange={(e) => setInput(e.target.value)}
           />
-          <button className="todo-form">Add Todo</button>
+          <button className="todo-form-addTodo">Add Todo</button>
         </>
       )}
     </form>
